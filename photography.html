@@ -1,0 +1,60 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <title>Carl Isaac</title>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Nanum+Gothic|Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    </head>
+    <body>
+        <!-- Header Bar -->
+        <header>
+            <h1>Carl Isaac</h1>
+        </header>
+        
+        
+        <!-- Navigation -->
+        <nav>
+        	<ul class="topnav" id="dropdownClick">
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="photography.html">Photography</a></li>
+        		<li><a href="music.html">Music</a></li>
+        		<li><a href="techdocs.html">Tech Docs</a></li>
+        		<li class="topnav-right"><a href="contact.html">Contact Me</a></li>
+        		<li class="dropdownIcon" onclick="dropdownMenu()"><a href="javascript:void(0);">&#9776;</a></li>
+        	</ul>            
+        </nav>
+        
+        <script>
+        	
+        	function dropdownMenu() {
+	var x = document.getElementById("dropdownClick");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+		/* change topnav to topnav.responsive */
+	} else {
+		x.className = "topnav"
+	}
+	
+}
+        </script>
+        
+        
+        
+        <!-- Main -->
+        <div id="main">
+            
+          
+                
+                <h2>Photography Challenge</h2>
+                
+                <img class="photochallenge" src="../img/snow.jpg" alt="Red house in the snow""/>
+                <img class="photochallenge" src="../img/croatianwoman.JPG" alt="Croatian woman at the market""/>
+                <img class="photochallenge" src="../img/namibia.JPG" alt="Namibian landscape""/>
+                <img class="photochallenge" src="https://cdn.pixabay.com/photo/2017/01/06/19/15/soap-bubble-1958650_960_720.jpg" alt="Crystal ball""/>
+                
+            
+            
+            
+        </div>
+    </body>
+</html>

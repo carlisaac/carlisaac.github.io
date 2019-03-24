@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Information Architecture</title>
+		<meta name="description" content="">
+		<meta name="author" content="Carl">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="../css/ia_style.css" type="text/css"/>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Information Architecture Assessment</h1>
+				<img src="../img/hand_vor_mund.jpg"></img>
+			</header>
+			
+
+			<div name="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit magna, iaculis ut lacus sed, iaculis egestas tortor. Praesent tristique posuere velit et auctor. Etiam posuere finibus vehicula. Vivamus tortor leo, sagittis nec lorem vel, aliquam finibus ante. Fusce laoreet pretium neque, quis finibus ex sodales ac. Cras pellentesque placerat mi, at viverra justo sagittis at. Sed non dapibus mi. Duis consectetur lectus tincidunt mattis rutrum. Fusce tincidunt eros quis est posuere, sed luctus metus efficitur. Phasellus elit libero, tempor ac velit ac, condimentum ornare purus. Sed suscipit metus non erat laoreet, sed blandit ipsum gravida. Nullam ac vehicula eros. Cras semper risus a metus maximus, vitae egestas velit faucibus. </p>
+			</div>
+			
+
+			<div name="ia_test">
+				<form id="infoarchitectTest">
+					<ol>
+					
+					<li><span>What are the responsibilities of the IA regarding defining deliverables and delivery channels?</span><br>
+					<input type="checkbox"  class="answerOption" name="q1" value="a">None. It is something that is Doc lead responsibility only.<br>
+					<input type="checkbox"  class="answerOption" name="q1" value="b">Define the deliverables for the team, and make sure the team of authors write the needed documentation.<br>
+					<input type="checkbox"  class="answerOption" name="q1" value="c">Together with PO, Doc lead, the team and the KM program lead define the deliverables. Then organize the deliverables in a way that maximizes reuse of content, and decide which are appropriate delivery channels to be used.</li>
+					
+					<li>
+					<span>Who can request new profiling values?</span><br>
+					<input type="checkbox"  class="answerOption" name="q2" value="a">Nobody. They are predefined in the system, so you cannot change them.<br>
+					<input type="checkbox"  class="answerOption" name="q2" value="b">Anyone can request implementation of a new profiling value. It is standard DITA functionality.<br>
+					<input type="checkbox"  class="answerOption" name="q2" value="c">Only IA can request such value, as described in the DITA CMS User Guide</li>
+					
+					<li>
+					<span>What is a container and what does it hold?</span><br>
+					<input type="checkbox"  class="answerOption" name="q3" value="a">Container is a DITA map, that holds reference to container parts, that are the inventory list for any object that belongs to the container - image, map or topic.<br />
+					<input type="checkbox"  class="answerOption" name="q3" value="b">Container is a folder in the file system, that stores the content of the documentation.<br>
+					<input type="checkbox"  class="answerOption" name="q3" value="c">Container is a set of metadata, allowing you to position the content correctly in the overall architecture planning.</li>
+					
+					<li>
+					<span>What happens to a sub-map, when a container is cloned to a new version?</span><br>
+					<input type="checkbox"  class="answerOption" name="q4" value="a">The sub-map is automatically cloned, taking the new container version. Double-maintenance is needed afterwards.<br>
+					<input type="checkbox"  class="answerOption" name="q4" value="b">Nothing. The map stays as it is.<br>
+					<input type="checkbox"  class="answerOption" name="q4" value="c">The sub-map is deleted and a new one is created, corresponding to the new container version.</li>
+					
+							<li>
+					<span>When do you need to close a container?</span><br>
+					<input type="checkbox"  class="answerOption" name="q5" value="a">As soon as your product is shipped, you need to close the container. You create a correction version of your container, in case such is needed.<br>
+					<input type="checkbox"  class="answerOption" name="q5" value="b">When you want to signal the production team the content is ready for shipment.<br>
+					<input type="checkbox"  class="answerOption" name="q5" value="c">You are not obliged to close containers, because it is more convenient to work with containers in status "editing".</li>
+					
+					<li>
+					<span>When creating a new buildable map, what is the suggested order for organizing your content?</span><br>
+					<input type="checkbox"  class="answerOption" name="q6" value="a">Identify tasks, add surrounding concepts, add reference topics.<br>
+					<input type="checkbox"  class="answerOption" name="q6" value="b">Write all the content in the way developers explained it to you.<br>
+					<input type="checkbox"  class="answerOption" name="q6" value="c">Identify concepts and reference information. Add the tasks to the related concepts.</li>
+					
+					<li>
+					<span>Who can clone single containers?</span><br>
+					<input type="checkbox"  class="answerOption" name="q7" value="a">Only Information Architects<br>
+					<input type="checkbox"  class="answerOption" name="q7" value="b">Information Architects and Doc Leads<br>
+					<input type="checkbox"  class="answerOption" name="q7" value="c">Information Architects, Doc Leads and Power users<br />
+					<input type="checkbox"  class="answerOption" name="q7" value="d">Information Architects and Power Users</li>
+					
+					<li>
+					<span>What is a layer, and what is it used for?</span><br>
+					<input type="checkbox"  class="answerOption" name="q8" value="a">Layer is a metadata category in a container, used to identify the scope of the content that is written in a container. It is also used when defining container dependencies.<br>
+					<input type="checkbox"  class="answerOption" name="q8" value="b">A set of folders, or context in which the content is stored.<br>
+					<input type="checkbox"  class="answerOption" name="q8" value="c">DITA map<br />
+					<input type="checkbox"  class="answerOption" name="q8" value="d">Hardcoded parameter of the container that you cannot change once you clone a container</li>
+					
+							<li>
+					<span>In which direction is the linking allowed in a dependency tree?
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q9" value="a">All directions, so you need to manually adjust them every time you create a dependency tree.<br>
+					<input type="checkbox"  class="answerOption" name="q9" value="b">In a single direction.<br>
+					<input type="checkbox"  class="answerOption" name="q9" value="c">Always in a single direction, from higher to the lower or equal layer.<br />
+					<input type="checkbox"  class="answerOption" name="q9" value="d">Always in a single direction, from lower to the higher or equal layer.</li>
+					
+					 <li>
+					<span>Which action creates a new version of an object?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q10" value="a">Setting its status to <q>closed</q><br>
+					<input type="checkbox"  class="answerOption" name="q10" value="b">Reuse<br>
+					<input type="checkbox"  class="answerOption" name="q10" value="c">Cloning<br />
+					<input type="checkbox"  class="answerOption" name="q10" value="d">Editing its <q>version</q> attribute</li>
+					
+					<li>
+					<span>As an information architect, you can delete a container.
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q11" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q11" value="b">False<br>
+					</li>
+					
+					 <li>
+					<span>How do you proceed when cloning a container tree?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q12" value="a">From the children to the root container.<br>
+					<input type="checkbox"  class="answerOption" name="q12" value="b">There are no limitiations where to start.<br>
+					<input type="checkbox"  class="answerOption" name="q12" value="c">From the root container to its children.<br />
+					<input type="checkbox"  class="answerOption" name="q12" value="d">From the container with status "done".</li>
+					
+					<li><span>A container part contains maximum of how many objects?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q13" value="a">100<br>
+					<input type="checkbox"  class="answerOption" name="q13" value="b">500<br>
+					<input type="checkbox"  class="answerOption" name="q13" value="c">2000<br />
+					<input type="checkbox"  class="answerOption" name="q13" value="d">1000</li>
+					
+					<li><span>Reusing topics <q>as is</q> across versions demonstrates which principle?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q14" value="a">Minimalism<br>
+					<input type="checkbox"  class="answerOption" name="q14" value="b">Specialization<br>
+					<input type="checkbox"  class="answerOption" name="q14" value="c">Inheritance<br />
+					<input type="checkbox"  class="answerOption" name="q14" value="d">Consistency</li>
+					
+					<li><span>Which of the following is not cloned when you clone a container?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q15" value="a">Container Part<br>
+					<input type="checkbox"  class="answerOption" name="q15" value="b">Build Project<br>
+					<input type="checkbox"  class="answerOption" name="q15" value="c">Buildable Map<br />
+					<input type="checkbox"  class="answerOption" name="q15" value="d">Project Map</li>
+					
+					<li><span>How do you create a dependency between two containers?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q16" value="a">Using cut and paste on the container parts.<br>
+					<input type="checkbox"  class="answerOption" name="q16" value="b">Lock the parent container, then drag and drop the child container using the DITA Map view. Adjust the container map, if needed.<br>
+					<input type="checkbox"  class="answerOption" name="q16" value="c">By cloning the child container into the parent's version number.</li>
+					
+					<li><span>Which delivery format should be your main consideration when planning new documentation deliverables?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q17" value="a">HTML<br>
+					<input type="checkbox"  class="answerOption" name="q17" value="b">PDF<br>
+					<input type="checkbox"  class="answerOption" name="q17" value="c">E-Book<br />
+					<input type="checkbox"  class="answerOption" name="q17" value="d">Embedded Help</li>	
+					
+					<li><span>Which of the following cannot be directly profiled?
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q18" value="a">Table Row<br>
+					<input type="checkbox"  class="answerOption" name="q18" value="b">Sub-Map<br>
+					<input type="checkbox"  class="answerOption" name="q18" value="c">Topic Title<br />
+					<input type="checkbox"  class="answerOption" name="q18" value="d">Images</li>
+					
+					<li><span>You cannot move a container across layers.
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q19" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q19" value="b">False</li>	
+					
+					<li><span>Which reuse option is best suited for the following scenario? <q>The same topic is used in multiple locations in a buildable map.</q>
+
+</span><br>
+					<input type="checkbox"  class="answerOption" name="q20" value="a">Profiling<br>
+					<input type="checkbox"  class="answerOption" name="q20" value="b">Copy-to attribute<br>
+					<input type="checkbox"  class="answerOption" name="q20" value="c">Conkeyrefs<br />
+					<input type="checkbox"  class="answerOption" name="q20" value="d">Variables</li>	
+
+					<li><span>Which of the following is defined in the buildable map?</q></span><br>
+
+					<input type="checkbox"  class="answerOption" name="q21" value="a">The file name of the output<br>
+					<input type="checkbox"  class="answerOption" name="q21" value="b">Copy-to attribute<br>
+					<input type="checkbox"  class="answerOption" name="q21" value="c">The copyright<br />
+					<input type="checkbox"  class="answerOption" name="q21" value="d">The document title for a PDF file</li>
+
+					<li><span>You can view profiled content after creating an output via <q>Generate Output.</q></span><br>
+
+					<input type="checkbox"  class="answerOption" name="q22" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q22" value="b">False</li>
+					
+					<li><span>At which layer would you put documentation for all applications powered by SAP HANA?</q></span><br>
+
+					<input type="checkbox"  class="answerOption" name="q23" value="a">10 - Application component<br>
+					<input type="checkbox"  class="answerOption" name="q23" value="b">8 - Suite of technical products<br>
+					<input type="checkbox"  class="answerOption" name="q23" value="c">13 - Suite of applications<br />
+					<input type="checkbox"  class="answerOption" name="q23" value="d">11- Application</li>
+					
+					<li><span>Which DITA object holds the entire content structure of a deliverable?</q></span><br>
+
+					<input type="checkbox"  class="answerOption" name="q24" value="a">Containerpart<br>
+					<input type="checkbox"  class="answerOption" name="q24" value="b">Sub-Map<br>
+					<input type="checkbox"  class="answerOption" name="q24" value="c">Buildable Map<br />
+					<input type="checkbox"  class="answerOption" name="q24" value="d">Topic</li>
+					
+					<li><span>The <q>Reuse In Additional Version</q> option allows for reuse against the versioning chain direction.</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q25" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q25" value="b">False</li>
+					
+					<li><span>You can reuse content with <q>conkeyref</q> only from Referable Content topics.</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q26" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q26" value="b">False</li>
+					
+					<li><span>Container names must be written in capitals.</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q27" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q27" value="b">False</li>
+					
+					<li><span>Cloning a container clones all elements within it to a new version.</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q28" value="a">True<br>
+					<input type="checkbox"  class="answerOption" name="q28" value="b">False</li>
+					
+					<li><span>How would you make changes to a topic that are only relevant for the latest version?</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q29" value="a">Make the changes in the previous version. They will shine through.<br>
+					<input type="checkbox"  class="answerOption" name="q29" value="b">Clone the topic to the newest version and edit it there.<br>
+					<input type="checkbox"  class="answerOption" name="q29" value="c">Create a new copy of the topic in the new container version.</li>
+					
+					<li><span>What are topic stubs?</span><br>
+
+					<input type="checkbox"  class="answerOption" name="q30" value="a">Topics used to store referable content.<br>
+					<input type="checkbox"  class="answerOption" name="q30" value="b">Topic templates for migrated content.<br>
+					<input type="checkbox"  class="answerOption" name="q30" value="c">Topics used for reuse.<br>
+					<input type="checkbox"  class="answerOption" name="q30" value="d">Metadata objects to mock empty topics.</li>
+					
+					<hr/>
+					
+					<input type="submit" value="Check Answers"/>
+					
+					
+									
+					
+</ol>
+
+				</form>
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript" src="../js/infoarch_script.js"></script> 
+		
+	</body>
+</html>
