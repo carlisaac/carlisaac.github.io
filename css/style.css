@@ -179,8 +179,11 @@ img {
 	display: block;
 	margin: auto;
 	line-height: 1.5;
-	padding: 2em;
-	
+	padding: 1em;
+}
+
+li {
+	padding: 0.8em;
 }
 
 
