@@ -1,0 +1,192 @@
+/* ################################## DEFAULT ######################### */
+
+html {
+	/* background: linear-gradient(to left, #76a1e2, #b8ceef); */
+	background: linear-gradient(to right, #a9b09d, #a2a798);
+	font-family: 'Raleway', 'Dosis', 'Nanum Gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.row {
+	display: flex;
+	width: 100%;
+}
+
+.row::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+	box-sizing: border-box;
+}
+
+/* [class*="col-"]{
+	border: 2px solid red;
+	padding: 15px;
+	float: left;
+} */
+
+fieldset {
+	display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #242424;
+	
+
+	/* text-shadow: 2px 2px 5px black; */ 			/* Adds a drop shadow to headers */
+	
+}
+
+.sectionheader, h1 {
+	margin-left: 40px;
+}
+
+
+
+/* ################################## NAV BAR ######################### */
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	overflow: hidden;
+}
+
+ul.topnav li {
+	list-style: none;
+	display: block;
+	float: left;
+	
+}
+
+ul.topnav li.topnav-right {
+	float: right;
+}
+
+ul.topnav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px;
+	min-height: 16px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+
+ul.topnav li a:hover {
+	background-color: #242424;
+	color: #FFFFFF;
+}
+
+
+
+
+
+/* ################################## MOBILE ######################### */
+
+ul.topnav li.dropdownIcon {
+	display: none;
+}
+
+@media screen and (max-width: 680px) {
+	ul.topnav li:not(:nth-child(1)) {
+		display: none;
+	}
+	
+	ul.topnav li.dropdownIcon {
+		display: block;
+		float: right;
+	}
+	
+	ul.topnav.responsive li.dropdownIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	ul.topnav.responsive {
+		position: relative;
+	}
+	
+	ul.topnav.responsive li {
+		display: inline;
+		float: none;
+		
+	}
+	
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+		
+	}
+}
+
+
+
+/* ################################## OTHER STUFF ######################### */
+
+
+
+#main {
+	margin-left: 40px;
+}
+
+
+
+
+#profilepic {
+	 
+	 border-radius: 50%;
+	 border: 2px solid #ddd;
+	 padding: 5px;
+	 margin-bottom: 60px;
+}
+
+img {
+	max-width: 100%;
+	padding: 5px;
+	opacity: 1;
+}
+
+.photochallenge {
+	margin-left: 40px;
+	border: 2px solid #DDDDDD;
+	padding: 5px;
+	width: 250px;
+}
+
+#aboutme>p {
+	display: block;
+	margin: auto;
+	line-height: 1.5;
+	padding: 1em;
+}
+
+li {
+	padding: 0.2em;
+}
+
+
+
+
+

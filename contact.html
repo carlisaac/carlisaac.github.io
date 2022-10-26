@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Contact</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Nanum+Gothic|Raleway" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<meta name="description" content="">
+		<meta name="author" content="Carl">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		
+		 
+        <!-- Header Bar -->
+        <header>
+            <h1>Carl Isaac</h1>
+        </header>
+        
+        
+        <!-- Navigation -->
+        <nav>
+        	<ul class="topnav" id="dropdownClick">
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="photography.html">Photography</a></li>
+        		<li><a href="music.html">Music</a></li>
+        		<li><a href="techdocs.html">Tech Docs</a></li>
+        		<li class="topnav-right"><a href="contact.html">Contact Me</a></li>
+        		<li class="dropdownIcon" onclick="dropdownMenu()"><a href="javascript:void(0);">&#9776;</a></li>
+        	</ul>            
+        </nav>
+        
+        <script>
+        	
+        	function dropdownMenu() {
+	var x = document.getElementById("dropdownClick");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+		/* change topnav to topnav.responsive */
+	} else {
+		x.className = "topnav"
+	}
+	
+}
+        </script>
+        
+        
+        <div id="main">
+		
+		<h2>Contact Me</h1>
+		
+		<p>This is one of those annoying forms.</p>
+		
+		<form>
+			
+			First Name:<br/>
+			<input type="text" name"firstName" placeholder="Spaceman" size="60"/><br/>
+			Last Name:<br/>
+			<input type="text" name="secondName" placeholder="Spiff" size="60"/><br/>
+			Email:<br/>
+			<input type="email" name="email" placeholder="spaceman.spiff@home.com" size="60"/><br/><br/>
+			
+			<fieldset size="50%">
+				<legend>Gender</legend>
+			<input type="radio" name="gender" value="male" checked="checked"/>Male<br/>
+			<input type="radio" name="gender" value="female"/>Female<br/>
+			<input type="radio" name="gender" value="other"/>Other<br/>
+			</fieldset><br/><br/>
+			
+			Your message:<br/>
+			<textarea name="message" rows="10" cols="50" placeholder="Share your thoughts here">
+			</textarea> <br/><br/>
+			
+			<input type="submit" value="Submit" onclick="alert('Hello world!')"/>
+		</form>
+		
+		</div>
+	</body>
+</html>

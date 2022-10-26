@@ -1,0 +1,134 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <title>Carl Isaac</title>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Nanum+Gothic|Raleway" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <style>
+table#musikwerkSongs {
+    width: 50%;
+    background-color: #f1f1c1;
+    color:#ffffff;
+}
+
+table#musikwerkSongs tr:nth-child(even) {
+	background-color:#4b5d57;
+}
+
+table#musikwerkSongs tr:nth-child(odd) {
+	background-color:#b4926d;
+}
+
+table#musikwerkSongs th {
+	color:white;
+	background-color:#302721;
+}
+
+
+</style>
+    </head>
+    <body>
+        <!-- Header Bar -->
+        <header>
+            <h1>Carl Isaac</h1>
+        </header>
+        
+        
+        <!-- Navigation -->
+        <nav>
+        	<ul class="topnav" id="dropdownClick">
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="photography.html">Photography</a></li>
+        		<li><a href="music.html">Music</a></li>
+        		<li><a href="techdocs.html">Tech Docs</a></li>
+        		<li class="topnav-right"><a href="contact.html">Contact Me</a></li>
+        		<li class="dropdownIcon" onclick="dropdownMenu()"><a href="javascript:void(0);">&#9776;</a></li>
+        	</ul>            
+        </nav>
+        
+        <script>
+        	
+        	function dropdownMenu() {
+	var x = document.getElementById("dropdownClick");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+		/* change topnav to topnav.responsive */
+	} else {
+		x.className = "topnav"
+	}
+	
+}
+        </script>
+        
+        <!-- Main -->
+        <div id="main">
+            
+            
+                
+                <h2>Music</h2>
+                <p>Spicy jalapeno bacon ipsum dolor amet non fugiat exercitation sed lorem in. Turkey
+                    ball tip pork, sint consequat aliquip enim shank magna eu velit bacon dolore. Pork
+                    culpa ut, incididunt ad beef minim consectetur spare ribs. Cupidatat magna cupim
+                    esse do laborum. Pig strip steak consectetur tongue jowl exercitation fatback esse
+                    ex ground round swine ut sirloin boudin laboris. Pork loin eiusmod spare ribs do,
+                    burgdoggen in fatback. Ullamco bresaola est, et turkey sausage ground round capicola
+                    doner t-bone.</p>
+                    
+                <h3>These Are the Songs that We Sing</h3>
+                
+                <table id="musikwerkSongs">
+                	<caption>Musikwerk Stuttgart: Repetoire</caption>
+                	<tr>
+                		<th>Song</th>
+                		<th>Artist</th>
+                	</th>
+                	<tr>
+                		<td>Body Percussion</td>
+                		<td>N/A</td>
+                	</tr>
+                	<tr>
+                		<td>Daft Punk Medley</td>
+                		<td>Daft Punk</td>
+               		</tr>
+               		<tr>
+                		<td>Dynamite</td>
+                		<td>Taio Cruz</td>
+                	</tr>
+                	<tr>
+                		<td>Gravity/Run to You</td>
+                		<td>Sarah Bareilles/Pentatonix</td>
+                	</tr>
+                	<tr>
+                		<td>Radio</td>
+                		<td>Wise Guys</td>
+                	</tr>
+                	<tr>
+                		<td>Sing!</td>
+                		<td rowspan="2">Pentatonix</td>
+                	</tr>
+                	<tr>
+                		<td>That's Christmas to Me</td>
+                	</tr>
+                	<tr>
+                		<td>Somebody to Love</td>
+                		<td rowspan="2">Queen</td>
+                	</tr>
+                	<tr>
+                		<td>Don't Stop Me Now</td>
+                	</tr>
+                	<tr>
+                		<td>Sweet Dreams</td>
+                		<td>Eurythmics</td>
+                	</tr>
+                	<tr>
+                		<td>Wannabe</td>
+                		<td>Spice Girls</td>
+                	</tr>
+                </table>
+                
+            </div>
+            
+            
+        
+    </body>
+</html>
